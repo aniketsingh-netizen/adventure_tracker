@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your To-do List </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="bg-gradient-orb orb-1"></div>
+    <div class="bg-gradient-orb orb-2"></div>
+
+   
+    <div class="decorative-sticker bear-1">🧸</div>
+    <div class="decorative-sticker bear-2">🧸</div>
+    <div class="decorative-sticker star-1">✨</div>
+    <div class="decorative-sticker star-2">✨</div>
+
+    
+    <main class="app-container">
+        
+       
+        <header class="theme-customizer">
+            <label for="hue-slider">🎨 Shift Theme Accent:</label>
+            <input type="range" id="hue-slider" min="0" max="360" value="190">
+        </header>
+
+        <header class="app-header">
+            <h1>Your To-do list 🧸</h1>
+            <div class="progress-container">
+                <span id="progress-text">0/0 Quests Completed</span>
+                <div class="progress-bar-wrapper">
+                    <div id="progress-fill" class="progress-bar-fill"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Input & Configuration Matrix -->
+        <section class="input-section">
+            <input type="text" id="task-input" placeholder="Plan a cute adventure..." autocomplete="off">
+            <select id="difficulty-input">
+                <option value="easy">🟢 Easy</option>
+                <option value="medium">🟡 Medium</option>
+                <option value="hard">🔴 Hard</option>
+            </select>
+            <button id="add-task-btn">Add Quest</button>
+        </section>
+
+       
+        <nav class="filter-nav">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </nav>
+
+       
+        <ul id="task-list" class="task-list"></ul>
+    </main>
+
+   
+    <footer class="admin-footer">
+        <p>&copy; 2026 Admin: <strong>Aniket Singh</strong>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
