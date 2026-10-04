@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Custom Adventure Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Engine Dynamic Ambient Orbs -->
+    <div class="bg-gradient-orb orb-1" id="orb-left"></div>
+    <div class="bg-gradient-orb orb-2" id="orb-right"></div>
+
+    <!-- Cute Teddy Bear Decorative Layout -->
+    <div class="decorative-sticker bear-1">🧸</div>
+    <div class="decorative-sticker bear-2">🧸</div>
+    <div class="decorative-sticker star-1">✨</div>
+    <div class="decorative-sticker star-2">✨</div>
+
+    <!-- Main Dynamic Application Window -->
+    <main class="app-container" id="main-panel">
+
+        <div class="top-card-bow bow-left">🎀</div>
+        <div class="top-card-bow bow-right">🎀</div>
+        
+        <!-- Toggle Button for Customizer Matrix -->
+        <button id="toggle-settings-btn" class="utility-icon-btn">⚙️ Open Theme Editor Suite</button>
+
+        <!-- Advanced Section-by-Section Theme Customizer -->
+        <section class="theme-customizer-panel hidden" id="customizer-panel">
+            <h3>🎨 Section Style Customizer</h3>
+            
+            <div class="control-grid">
+                <div class="control-group">
+                    <label>🌐 Global Canvas BG</label>
+                    <input type="color" id="bg-canvas-picker" value="#fff0f5">
+                </div>
+
+                <div class="control-group">
+                    <label>🔲 Main App Card BG</label>
+                    <input type="color" id="bg-card-picker" value="#ffffff">
+                </div>
+
+                <div class="control-group">
+                    <label>⚡ Active Accent & Buttons</label>
+                    <input type="color" id="accent-picker" value="#ffb6c1">
+                </div>
+
+                <div class="control-group">
+                    <label>📝 Main Typography Font</label>
+                    <input type="color" id="text-main-picker" value="#4a3b32">
+                </div>
+
+                <div class="control-group">
+                    <label>🪵 Task Items Matte BG</label>
+                    <input type="color" id="bg-item-picker" value="#fff5f6">
+                </div>
+
+                <div class="control-group text-center">
+                    <label>🪟 Card Glass Opacity</label>
+                    <input type="range" id="opacity-slider" min="10" max="100" value="75">
+                </div>
+            </div>
+
+            <button id="reset-theme-btn">Reset to Baby Pink Defaults</button>
+        </section>
+
+        <!-- Application Header Header Matrix -->
+        <header class="app-header">
+            <h1 id="app-title">Adventure Tracker 🧸</h1>
+            <div class="progress-container">
+                <span id="progress-text">0/0 Quests Completed</span>
+                <div class="progress-bar-wrapper">
+                    <div id="progress-fill" class="progress-bar-fill"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Input & Configuration Matrix -->
+        <section class="input-section">
+            <input type="text" id="task-input" placeholder="Plan a cute adventure..." autocomplete="off">
+            <select id="difficulty-input">
+                <option value="easy">Easy 🟢</option>
+                <option value="medium">Medium 🟡</option>
+                <option value="hard">Hard 🔴</option>
+            </select>
+            <button id="add-task-btn">Add Quest</button>
+        </section>
+
+        <!-- View Filter Sub-navigation -->
+        <nav class="filter-nav">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </nav>
+
+        <!-- Main Task Scroll View -->
+        <ul id="task-list" class="task-list"></ul>
+    </main>
+
+    <!-- Anchored Protected Admin Branding Footer -->
+    <footer class="admin-footer">
+        <p>&copy; 2026 Admin: <strong>Aniket Singh</strong>. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
